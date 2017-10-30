@@ -9,23 +9,23 @@ Docker image with:
 
 which do nothing by default.
 
-Fluentd config is `/etc/fluentd/fluent.conf` could be easily override by volume.
+Fluentd config is `/etc/td-agent/td-agent.conf` could be easily override by volume.
 
-`-v /path/to/fluentdconfdir:/etc/fluentd`
+`-v /path/to/fluentdconfdir:/etc/td-agent`
 
 
 # Simple usage
 
-`docker run -d -v /path/to/fluentdconfdir:/etc/fluentd panta/td-agent`
+`docker run -d -v /path/to/td-agent:/etc/td-agent panta/td-agent`
 
 # settings
 
 PATH
 
-- `/etc/fluentd/fluent.conf`: td-agent config file
+- `/etc/td-agent/td-agent.conf`: td-agent config file
 - `/var/log/td-agent/`: td-agent log directory
 
-default fluent.conf
+default td-agent.conf
 
-- see: [fluent.conf](https://github.com/panta/docker-td-agent/blob/master/etc/fluentd/fluent.conf)
+- see: [td-agent.conf](https://github.com/panta/docker-td-agent/blob/master/etc/td-agent/td-agent.conf)
 
