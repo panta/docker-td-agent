@@ -5,10 +5,12 @@ MAINTAINER Marco Pantaleoni <marco.pantaleoni@gmail.com>
 ENV DEBIAN_FRONTEND noninteractive
 
 # update
-RUN apt-get update && apt-get -y upgrade
+RUN apt-get update
 
 # ruby related packages for td-agent
-RUN apt-get -y install curl libcurl4-openssl-dev ruby ruby-dev make
+RUN apt-get -y --no-install-recommends install sudo curl libcurl4-openssl-dev ruby ruby-dev make
+
+RUN apt-get -q clean
 
 # install fluentd td-agent
 RUN curl -L https://toolbelt.treasuredata.com/sh/install-debian-jessie-td-agent2.sh | sh
