@@ -1,4 +1,4 @@
-FROM ubuntu:14.04
+FROM debian:jessie
 MAINTAINER Marco Pantaleoni <marco.pantaleoni@gmail.com>
 
 # environment
@@ -11,7 +11,7 @@ RUN apt-get update && apt-get -y upgrade
 RUN apt-get -y install curl libcurl4-openssl-dev ruby ruby-dev make
 
 # install fluentd td-agent
-RUN curl -L http://toolbelt.treasuredata.com/sh/install-ubuntu-trusty-td-agent2.sh | sh
+RUN curl -L https://toolbelt.treasuredata.com/sh/install-debian-jessie-td-agent2.sh | sh
 
 # clean cache files
 RUN apt-get clean && rm -rf /var/cache/apt/archives/* /var/lib/apt/lists/*
