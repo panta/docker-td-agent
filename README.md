@@ -16,7 +16,7 @@ Fluentd config is `/etc/fluentd/fluent.conf` could be easily override by volume.
 
 # Simple usage
 
-`docker run -d -v /path/to/fluentdconfdir:/etc/fluentd shimizukawa/td-agent`
+`docker run -d -v /path/to/fluentdconfdir:/etc/fluentd panta/td-agent`
 
 # settings
 
@@ -27,5 +27,5 @@ PATH
 
 default fluent.conf
 
-- see: [fluent.conf](https://github.com/shimizukawa/docker-td-agent/blob/master/etc/fluentd/fluent.conf)
+- see: [fluent.conf](https://github.com/panta/docker-td-agent/blob/master/etc/fluentd/fluent.conf)
 

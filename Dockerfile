@@ -1,5 +1,5 @@
 FROM ubuntu:14.04
-MAINTAINER Takayuki Shimizukawa shimizukawa@gmail.com
+MAINTAINER Marco Pantaleoni <marco.pantaleoni@gmail.com>
 
 # environment
 ENV DEBIAN_FRONTEND noninteractive
