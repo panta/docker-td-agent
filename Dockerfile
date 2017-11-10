@@ -28,6 +28,7 @@ RUN /opt/td-agent/embedded/bin/fluent-gem install --no-ri --no-rdoc \
     fluent-plugin-elasticsearch \
     fluent-plugin-record-modifier \
     fluent-plugin-exclude-filter \
+    fluent-plugin-secure-forward \
     fluent-plugin-sqlite3 \
     fluent-plugin-sql
 

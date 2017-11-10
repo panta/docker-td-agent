@@ -1,5 +1,5 @@
 REPOSITORY?=panta/td-agent
-TAG?=sql
+TAG?=secure-and-sql
 
 OK_COLOR=\033[32;01m
 NO_COLOR=\033[0m
