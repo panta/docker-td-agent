@@ -6,6 +6,8 @@ Docker image with:
 - fluent-plugin-elasticsearch
 - fluent-plugin-record-modifier
 - fluent-plugin-exclude-filter
+- fluent-plugin-sqlite3 (in panta/td-agent:sql)
+- fluent-plugin-sql (in panta/td-agent:sql)
 
 which do nothing by default.
 
