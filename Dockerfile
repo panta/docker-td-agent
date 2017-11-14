@@ -20,8 +20,8 @@ RUN curl -L https://toolbelt.treasuredata.com/sh/install-debian-jessie-td-agent2
 RUN apt-get clean && rm -rf /var/cache/apt/archives/* /var/lib/apt/lists/*
 
 # install gems needed by fluentd plugins
-RUN gem install sqlite3
-RUN gem install mysql2
+RUN /usr/sbin/td-agent-gem install sqlite3 --no-document
+RUN /usr/sbin/td-agent-gem install mysql2 --no-document
 
 # install fluentd plugins
 RUN /opt/td-agent/embedded/bin/fluent-gem install --no-ri --no-rdoc \
